@@ -275,7 +275,7 @@ public class WeatherAppGUI extends JFrame
         });
 
         // Add search button to GUI
-        //add(searchButton);
+        add(searchButton);
 
         // Add degree button to GUI
         add(degreeButton);
