@@ -63,7 +63,7 @@ Handles back-end operations, including API communication and data processing. Ke
 3. **Retrieve Weather Data**:  
    Click the "Search" button to fetch and display the weather information.
 4. **Convert from Celsius to Farhenite**:
-   Click the "Celsius" button to convert from °C to °F, and vice versa
+   Click the "Celsius" button to convert from °C to °F, and vice versa.
 
 ## Dependencies
 - **JSON Parsing**: Requires a JSON parsing library such as `org.json.simple` or `com.fasterxml.jackson`.
