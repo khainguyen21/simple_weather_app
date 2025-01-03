@@ -1,6 +1,6 @@
 # WeatherApp  
 
-WeatherApp is a Java-based application with a SWING graphical user interface (GUI) that allows users to fetch and display weather information for a specified location. The app interacts with weather APIs to retrieve real-time data such as temperature, weather code, humidity, and wind speed.
+WeatherApp is a Java-based application using IntelliJ IDEA with a SWING graphical user interface (GUI) that allows users to fetch and display weather information for a specified location. The app interacts with weather APIs to retrieve real-time data such as temperature, weather code, humidity, and wind speed from Open-Meteo website.
 
 ## Features
 - **User-friendly GUI**:
@@ -9,13 +9,12 @@ WeatherApp is a Java-based application with a SWING graphical user interface (GU
   - Customizable component alignment for better readability.
 
 - **API Integration**:
-  - Communicates with weather APIs to fetch location-based weather data.
-  - Retrieves longitude and latitude based on the user's location input.
+  - Communicates with weather APIs to retrieve longitude and latitude based on the user's location input.
   - Fetches detailed weather information using the obtained coordinates.
 
 ## Components
 ### 1. **WeatherAppGUI.java**  
-The front-end GUI, implemented by extending the `JFrame` class. It includes the following features:  
+The front-end GUI is implemented by extending the `JFrame` class. It includes the following features:  
 - **GUI Window Management**:
   - `setDefaultCloseOperation(EXIT_ON_CLOSE);` ensures the program terminates when the window is closed.
   - `setSize()` and `setLocationRelativeTo(null);` position the GUI window at the center of the screen.
@@ -24,7 +23,7 @@ The front-end GUI, implemented by extending the `JFrame` class. It includes the 
   
 - **Component Positioning and Alignment**:
   - `setBounds();` defines the size and location of components.
-  - `setHorizontalAlignment();` aligns content of components like `JLabel`, `JButton`, and `JTextField`.
+  - `setHorizontalAlignment();` aligns the content of components like `JLabel`, `JButton`, and `JTextField`.
   - `setTextAlignment();` adjusts text alignment within `JTextArea` and `JTextPane`.
 
 ---
@@ -38,7 +37,7 @@ Handles back-end operations, including API communication and data processing. Ke
    - Sends the request with `.connect()` and verifies response status using `.getResponseCode()`.
 
 2. **Process Server Response**:
-   - Reads the response line-by-line using `Scanner` and stores it in a `StringBuilder`.
+   - Reads the response and loops line-by-line using `Scanner` and stores it in a `StringBuilder`.
    - Closes the `Scanner` and disconnects the connection using `.disconnect()`.
    - Parses the raw JSON string into a structured `JSONObject` using `JSONParser`.
 
